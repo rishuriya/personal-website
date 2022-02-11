@@ -1,0 +1,23 @@
+.bgimg{
+    background-image: url('../readmore.png'); 
+    background-size: cover;
+  }
+  .footer {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .cdbg{
+    background-image: linear-gradient(#D7F1F9,#F9AE53);
+  }
+  .link
+  {
+    text-decoration: none;
+  }
+  .formimg{
+    background-image: url('../wall.png'); 
+    background-size: cover;
+  }
+.sign{
+    background-image: url('../piller_of_creation.jpg'); 
+    background-size: cover;
+  }

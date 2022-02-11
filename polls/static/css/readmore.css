@@ -1,0 +1,10 @@
+.formimg{
+    background-image: url('../wall.png'); 
+    background-size: cover;
+  }
+  .linkc{
+    text-decoration:none
+  }
+  .cdbg{
+    background-image: linear-gradient(#D7F1F9,#F9AE53);
+  }
