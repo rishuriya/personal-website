@@ -40,13 +40,17 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Home</a>
+                      <a class="nav-link" aria-current="page" href="{% url 'blog:index' %}">Home</a>
                     </li>
                     <hr class=""/>
                     <li class="nav-item">
-                      <a class="nav-link active" href="../../">Blog Wall</a>
+                      <a class="nav-link active" href="#">Blog Wall</a>
                     </li>
                     <hr class=""/>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'blog:achieve' %}">Add Achievement</a>
+                    </li>
+                        <hr class=""/>
                     <li class="nav-item">
                       <a class="nav-link" href="add_blog/">Add a Blog</a>
                     </li>
