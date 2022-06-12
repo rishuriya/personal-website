@@ -54,7 +54,10 @@
           <li class="pt-0"><a href="#about" class="nav-link scrollto"><i class="fas fa-user"></i> <span>About</span></a></li>
           <li class="pt-0"><a href="#resume" class="nav-link scrollto"><i class="fas fa-file"></i> <span>Resume</span></a></li>
           <li class="pt-0"><a href="#portfolio" class="nav-link scrollto"><i class="fas fa-blog"></i> <span>Blog &amp; Poll</span></a></li>
+<<<<<<< HEAD
           <li class="pt-0"><a href="#social" class="nav-link scrollto"><i class="fab fa-instagram"></i> <span>Social-Media</span></a></li>
+=======
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
           <li class="pt-0"><a href="#contact" class="nav-link scrollto"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
           <li class="pt-0"><a href="{% url 'blog:login' %}" class="nav-link scrollto"><i class="fa-solid fa-arrow-right-to-bracket"></i></i> <span>Login</span></a></li>
         </ul>
@@ -253,6 +256,7 @@
               <h5>2016 - Present</h5>
               <p><em>MileStones </em></p>
               <ul>
+<<<<<<< HEAD
                 {% if achievements %}
                 {% for achievement in achievements %}
                 <li>{{ achievement.date }}:- {{ achievement.text }}</li>
@@ -260,6 +264,19 @@
                 {% else %}
                 <li>No Achievements are available.</li>
                 {% endif %}
+=======
+                <li>2022 Google HashCode:- Taken part in Google HashCode 2022, Gain experience in Competative Coding</li>
+                <li>11 Jan 2022:- Selected For India`s Best FOSS Club ,amFOSS </li>
+                <li>Jan 2022:- Made First Telegram Bot using Python. </li>
+                <li>Dec 2021:- Completed full python course (automete the boaring stuff with python) </li>
+                <li>Jul 2021:- Started making a social media webapp using php. Framework is completed and basic fuctions are implemented. Like and comment yet to implement.</li>
+                <li>Apr 2021:- Made a dynamic website for school in my local and which help them to give online education in Lockdown. </li>
+                <li>Mar 2021:- Started Learning php, CSS and JavaScript. </li>
+                <li>Jun 2020:- Started Learning Android Development and made an basic App (which give question and option to user,user select option and give the result). </li>
+                <li>Apr 2018:- Started learning C programm </li>
+                <li>2018-2019:- Learned Java &amp; SQL(DBMS) in this timeframe </li>
+                <li>Jan 2017:- Win a Website Developing competition in School which act as official website for school for 2 month. </li>
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
               </ul>
             </div>
             <!--<div class="resume-item">
@@ -349,9 +366,14 @@
           <h2>Blogs</h2>
           <p>A blog is a means of sharing thoughts and ideas with the world. I use blog as my personal diary, a project collaboration tool, a guide, or a means of communicating and publishing information on the web. Its uses are as limitless as your imagination.</p>
         </div>
+<<<<<<< HEAD
         
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
           {% if posts %}
+=======
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
           {% for post in posts %}
           <div class="col-lg-4 col-md-6 portfolio-item filter-app h-200">
             <div class="cdbg">
@@ -376,14 +398,18 @@
           </div>
           </div>
           {% endfor %}
+<<<<<<< HEAD
           {% else %}
                 <p>No blogs are available.</p>
           {% endif %}
+=======
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
 
         </div>
       </div>
       <div class="text-center pt-3"><a href="{% url 'blog:post_list' %}"><button type="button" class="btn btn-outline-dark btn-lg"> More Blogs</button></a></div>
     </section><!-- End Services Section -->
+<<<<<<< HEAD
       <!--Social Media-->
       <section id="social" class="portfolio section-bg">
         <div class="container">
@@ -400,13 +426,20 @@
         </div>
         <div class="text-center pt-3"><a href="https://www.instagram.com/rishav_a2z/"><button type="button" class="btn btn-outline-dark btn-lg"> View Profile</button></a></div>
       </section><!-- End Social media Section -->
+=======
+
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
           <h2>Contact</h2>
+<<<<<<< HEAD
           <p>To Contact me send your info by filling this form. I contact you asap and try to figure out your doubt, query and curiosity. </p>
+=======
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -437,6 +470,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+<<<<<<< HEAD
             <form method="post" enctype="multipart/form-data" class="php-email-form">{% csrf_token %}
               <div class="row">
                 <div class="form-group col-md-6">
@@ -446,15 +480,34 @@
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
                   <input type="email" class="form-control" name="email" id="id_email" required>
+=======
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" name="subject" id="id_subject" required>
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
                 <textarea class="form-control" name="message" rows="10" id="id_message" required></textarea>
+=======
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>

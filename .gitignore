@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python
 *.pyc
 *~
@@ -24,4 +25,32 @@ $RECYCLE.BIN/
 # Visual Studio
 .vscode/
 .history/
+=======
+# Python
+*.pyc
+*~
+__pycache__
+
+# Env
+.env
+myvenv/
+venv/
+
+# Database
+db.sqlite3
+
+# Static folder at project root
+/static/
+media/
+
+# Windows
+Thumbs.db*
+ehthumbs*.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Visual Studio
+.vscode/
+.history/
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
 *.code-workspace

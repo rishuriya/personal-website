@@ -1,12 +1,20 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from .models import Achivement, Post
+=======
+from .models import Post
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
 from polls.models import Question,Choice
 from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
+<<<<<<< HEAD
 from .forms import AchivementForm
 from .signup import SignupForm
 from .forms import ContactForm
+=======
+from .signup import SignupForm
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
 from django.shortcuts import redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
@@ -14,6 +22,7 @@ from django.contrib.auth import authenticate, login
 def index(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')[:3]
     question=Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:3]
+<<<<<<< HEAD
     achievements=Achivement.objects.order_by("-date")
     if request.method == "POST":
             form = ContactForm(request.POST)
@@ -24,6 +33,9 @@ def index(request):
     else:
         form = ContactForm()
     return render(request, 'blog/index.html',{'latest_question_list':question,'posts':posts,'achievements':achievements})
+=======
+    return render(request, 'blog/index.html',{'latest_question_list':question,'posts':posts})
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
 
 def signup(request):
     if request.method == "POST":
@@ -33,7 +45,11 @@ def signup(request):
             if post.password==post.cpassword:
                 user = User.objects.create_user(post.username, post.email, post.password)
                 user.save()
+<<<<<<< HEAD
                 return redirect("../login")
+=======
+                return redirect(user_login)
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
     else:
         form = SignupForm()
     return render(request, 'blog/signup.html',{'form': form})
@@ -94,6 +110,7 @@ def temp(request):
             form = PostForm()
         return render(request, 'blog/form.html', {'form': form,"username":username})
     else:
+<<<<<<< HEAD
         return redirect("../login/")
 
 def achievement_log(request):
@@ -111,3 +128,6 @@ def achievement_log(request):
     else:
         return redirect("../login/")
 
+=======
+        return redirect("../login/")
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12

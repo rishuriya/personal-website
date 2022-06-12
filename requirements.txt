@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 Django
 Pillow
+=======
+Django~=3.2.10
+Pillow
+gunicorn
+django-heroku
+>>>>>>> 5c6558eaefe3f0943313e5aeb94b35dd5925aa12
