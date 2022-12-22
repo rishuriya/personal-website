@@ -1,0 +1,12 @@
+--2022-12-11 18:12:47--  https://autoinstall.plesk.com/one-click-installer
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving autoinstall.plesk.com (autoinstall.plesk.com)... 2a02:6ea0:d100::13, 2a02:6ea0:d100::17, 2a02:6ea0:d100::12, ...
+Connecting to autoinstall.plesk.com (autoinstall.plesk.com)|2a02:6ea0:d100::13|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16139 (16K) [text/plain]
+Saving to: ‘STDOUT’
+
+-                     0%[                    ]       0  --.-KB/s               -                     0%[                    ]       0  --.-KB/s    in 0s      
+
+
+Cannot write to ‘-’ (Broken pipe).
